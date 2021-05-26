@@ -1,0 +1,207 @@
+/*Reseteando los estilos*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*relavite acmompañado de float*/
+
+/*header{
+	width: 200px;
+	height: 400px;
+	margin: 40px;
+	padding: 30px;
+	position: relative;
+	float: left;
+}*/
+
+/*position: fixed, absolute, relative*/
+/*fixed acompañado de top, right,...*/
+/*fixed se basa en el navegador*/
+
+/*div{
+	width: 400px;
+	height: 200px;
+	background: blue;
+	position: fixed;
+	top: 50px;      
+	right: 80px;
+}*/
+
+/*absolute acompañado de top, right,...*/
+/*Se basa en el contenedor*/
+
+/*article{
+	width: 40px;
+	height: 50px;
+	background: gr;
+	position: absolute;
+	top: -10px;		   
+	right: -10px;
+}
+*/
+
+header{
+	width: 100%;
+	height: 80px;
+	background: linear-gradient(#060609, #151823);
+	position: relative;
+	float: left;
+}
+	
+	#logo, nav, #usuario{
+		position: relative;
+		float: left;
+		height: 100%;
+	}
+
+	#logo{ 
+		width: 150px;
+		padding: 15px 30px;
+		box-sizing: border-box;
+		cursor: pointer;
+	}
+		#logo>img{
+			height: 100%;
+		}
+
+	nav{
+		width: calc(100% - 350px);
+	}
+		ul{
+			height: 100%;
+			list-style: none;
+		}
+
+		li{
+			font-family: sans-serif;
+			font-size: 16px;
+			position: relative;
+			float: left;
+			padding-left: 20px;
+			padding-right: 20px;
+			box-sizing: border-box;
+			height: 100%;
+			line-height: 80px; /*especificar el espacio o lugar del texto de manera vertical*/
+			color: white;
+			text-transform: uppercase; 
+			cursor: pointer;
+		}
+			li>img{
+				height: 16px;
+				filter: invert(100%);
+				margin-right: 5px;
+			}
+
+	#usuario{
+		width: 200px;
+		padding: 10px 20px;
+		box-sizing: border-box;
+	}
+		p{
+			font-family: sans-serif;
+			color: white;
+			font-size: 16px;
+			position: relative;
+			float: left;
+			line-height: 60px;
+			margin-right: 15px;
+		}
+		#usuario-img{
+			height: 100%;
+			width: 60px;
+			border-radius: 50%;
+			position: relative;
+			float: left;
+			overflow: hidden;
+		}
+
+		#usuario-img>img{
+			height: 100%;
+		}
+
+section{
+	width: 100%;
+	background-color: #151823;
+	position: relative;/*Se basa en el navegador*/
+	float: left;
+	padding-bottom: 50px;
+	padding-right: 20px;
+	padding-left: 20px;
+	box-sizing: border-box; /*Mantiene el tamaño original*/
+}
+
+	article, aside, #Contenido{
+		width: 100%;
+		position: relative;
+		float: left;
+	}
+	
+	article{
+		width: 80% !important;
+		height: 350px;
+		overflow: hidden;
+		border-radius: 30px;
+		margin-left: 10%;
+		cursor: pointer;
+	}	
+		article>img{
+			height: 100%;
+		}
+
+	aside{
+		height: 200px;
+		padding: 30px;
+		box-sizing: border-box;
+	}
+		.temas{
+			width: 240px;
+			height: 100%;
+			background: #272934;
+			position: relative;
+			float: left;
+			margin-left: 30px;
+			border-radius: 15px;
+			border: 2.5px solid #3c3d46;
+			box-sizing: border-box;
+			overflow: hidden;
+			text-align: center;
+			cursor: pointer;
+		}
+			.temas>img{
+				height: 100%;
+			}
+
+	#Contenido{
+		padding: 30px;
+		box-sizing: border-box;
+	}
+		.contenido-dividido{
+			height: 200px;
+			margin-bottom: 20px;
+		}
+			.contenido-dividido>h3{
+				font-family: sans-serif;
+				color: #FFF;
+				font-size: 24px;
+			}
+
+			.peliculas{
+				width: 19%;
+				height: 180px;
+				margin-top: 10px;
+				margin-left: 10px;
+				position: relative;
+				float: left;
+				overflow: hidden;
+				cursor: pointer;
+			}
+
+			.primero{
+				margin-left: 0px;
+			}
+				.peliculas>img{
+					height: 100%;
+				}
+
+		

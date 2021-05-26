@@ -1,0 +1,148 @@
+*{
+	padding: 0;
+	margin: 0;
+	user-select: none;
+	font-family: 'Segoe UI';
+}
+
+
+#Contenedor_principal{
+	position: fixed;
+	width: 300px;
+	height: 600px;
+	top: 50%;
+	margin-top: -310px;
+	left: 50%;
+	margin-left: -165px;
+	border-radius: 25px;
+	overflow: hidden;
+	background: #293241;
+}
+	#Pantalla{
+		height: 40%;
+		width: 100%;
+	}
+		#Pantalla>#Tema{
+			
+			position: relative;
+			float: left;
+			background: #293241;
+			width: 25%;
+			height: 30px;
+			margin-left: calc(50% - 41.25px);
+			margin-top: 12px;
+			border-radius: 8px;
+			overflow: hidden;
+		}
+			#Pantalla>#Tema>#Dia{
+				position: relative;
+				float: left;
+				width: 50%;
+				height: 100%;
+				background: rgba(99, 110, 114,0.2);
+			}
+				#Pantalla>#Tema>#Dia:hover{
+					background: rgba(99, 110, 114,0.3);
+				}
+
+				#Pantalla>#Tema>#Dia>span{
+					height: 100%;
+					width: 100%;
+					cursor: pointer;
+
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+
+			#Pantalla>#Tema>#Noche{
+				position: relative;
+				float: left;
+				width: 50%;
+				height: 100%;
+				background: rgba(99, 110, 114,0.2);
+			}
+				#Pantalla>#Tema>#Noche:hover{
+					background: rgba(99, 110, 114,0.3);
+				}
+
+				#Pantalla>#Tema>#Noche>span{
+					height: 100%;
+					width: 100%;
+					cursor: pointer;
+
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+
+		#Pantalla>#Operacion{
+				position: relative;
+				float: left;
+				width: calc(100% - 30px);
+				height: 15%;
+				margin-left: 15px;
+				margin-top: 30%;
+				text-align: right;
+				font-size: 20px;
+				color: rgb(192,192,192);
+			}	
+
+		#Pantalla>#Resultado{
+				position: relative;
+				float: left;
+				width: calc(100% - 30px);
+				height: 17%;
+				margin-left: 15px;
+				line-height: 30px;
+				text-align: right;
+				color: white;
+				font-size: 30px;
+				color: #74b9ff;
+			}	
+
+	#Botones{
+		height: calc(60% - 30px);
+		width: calc(100% - 30px);
+		border-radius: 29px 29px 8px 8px;
+		padding: 15px;
+		background: rgba(99, 110, 114,0.2);
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+		#Botones>.botones{
+			width: 58px;
+			height: 58px;
+			color: rgb(192,192,192);
+			border-radius: 50%;
+			text-align: center;
+			line-height: 58px;
+			margin-left: 10px;
+			font-size: 24px; 
+			font-weight: 300;
+		}
+
+		#Botones>.oprecaion{ 
+			color: #74b9ff;
+			line-height: 53px !important;
+			background: rgba(128,128,128,0.1);
+		}
+
+		#Botones>.sin_margen{
+			margin-left: 0px !important;
+		}
+
+		#Botones>.igual{ 
+			line-height: 53px !important;
+			background: #74b9ff;
+			color: white;
+		}
+
+
+
+
+
+
+
