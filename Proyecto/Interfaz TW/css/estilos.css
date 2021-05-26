@@ -1,0 +1,391 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Segoe UI';
+}
+
+ul{
+	list-style: none;
+}
+
+.pagina{
+	position: relative;
+	float: left;	
+}
+
+#pagina_Inicio{
+	position: fixed;
+	width: 25%;
+	height: 100%;
+}
+	.margen{
+		margin-left: 80px;
+	}
+
+	#logo{
+		width: 130px;
+		height: 65px;
+		padding: 15px 20px;
+		box-sizing: border-box;
+		cursor: pointer;
+	}
+		#logo>img{
+			height: 100%;
+		}
+
+	#menu{
+		position: relative;
+		float: left;
+		height: 470px;
+		width: calc(40% - 80px);
+	}
+
+		#menu>img{
+			display: block;
+			height: 28px;
+			padding: 15px;
+			cursor: pointer;
+		}	
+	#menu_letras{
+		position: relative;
+		float: left;
+		height: 60%;
+		width: 60%;
+	}
+		#menu_letras>span{
+			font-weight: 700;
+			font-size: 19px;
+			display: block;
+			padding: 19px 0px 13.05px 0px;
+			cursor: pointer;
+		}
+			.resaltar{
+				color: #1A91DA;
+			}
+
+    #boton_menu{
+    	position: relative;
+    	float: left;
+    	width: 100%;
+    }
+    	#boton_menu>button{
+    		font-weight: 700;
+			font-size: 15px;
+    		background-color: #1A91DA;
+    		color: #FFF;
+    		margin-top: 10px;
+    		margin-left: 22.5%;
+    		width: 55%;
+    		padding: 15px;
+    		border-radius: 32px;
+    		border: 1px;
+    	}
+
+#pagina_Tweets{
+	margin-left: 25%;
+	width: 40%;
+	border-right: 2.5px solid #E7ECF0;
+	border-left: 2.5px solid #E7ECF0;
+}
+
+	#twittear{
+		width: 100%;
+		height: 190px;
+		border-bottom: 10px solid #E7ECF0;
+	}
+		#twittear>#inicio{
+			font-weight: 780;
+			font-size: 19px;
+			padding: 15px;
+			cursor: pointer;
+			border-bottom: 2.5px solid #E7ECF0;
+		}
+			#twittear>#inicio>img{
+			position: relative;
+			float: right;
+			height: 24px;
+			cursor: pointer;
+			}
+
+		#publicar{
+			width: calc(100% - 30px);
+			height: calc(100% - 78.1px);
+			padding: 10px 15px;
+		}
+
+		#mensaje{
+			position: relative;
+			float: left;
+			width: calc(100% - 59px);
+			height: 100%;
+		}
+
+			#publicar>div>ul>li{
+				position: relative;
+				float: left;
+			}
+
+			#publicar>div>ul>li>img{
+				height: 22px;
+				padding: 10px 15px 0px 0px;
+			}
+				.rotar{
+					transform: rotate(90deg);
+					padding: 10px 0px 0px 10px !important;
+				}
+
+			#publicar>div>input{
+				font-weight: 400;
+				font-size: 19px;
+				margin-top: 13px;
+				margin-bottom: 35px;
+				border: 0px;
+
+			}
+
+			#publicar>div>button{
+				font-weight: 700;
+				font-size: 15px;
+				background-color: #1A91DA;
+    			color: #FFF;
+    			margin-left: 56.2%;
+    			width: 16%;
+    			padding: 10px 15px;
+    			border-radius: 32px;
+    			border: 1px;
+			}
+
+		.usuario_img{
+			position: relative;
+			float: left;
+			width: 44px;
+			height: 100%;
+			padding-right: 15px;
+		}
+
+			.usuario_img>img{
+				height: 44px;
+				cursor: pointer;
+			}
+
+	#tweets{
+		position: relative;
+		float: left;
+		width: calc(100% - 30px);
+		height: 358px;
+		padding: 10px 15px;
+		cursor: pointer;
+		border-bottom: 2.5px solid #E7ECF0;
+	}
+		#tweet_individual{
+			width: 100%;
+			height: 100%;
+		}
+
+		#tweet_individual>.ajustes_img{
+			border-radius: 50%;
+			overflow: hidden;
+			width: 48px !important;
+			height: 48px !important;
+			padding: 0px !important;
+			margin-right: 15px;
+		}
+			#tweet_individual>.ajustes_img>img{
+				height: 100% !important;
+			}
+
+			.lista{
+				width: 100%;
+				height: calc(100% - 322px);
+			}
+
+			#tweet_individual>#tweet_contenido>.lista>div{
+				position: relative;
+				float: left;
+				height: 18px;
+			}
+
+			#tweet_individual>#tweet_contenido>.lista>div>img{
+				height: 100%;
+				padding: 14px 120px 0px 0px;
+			}
+				.item_1{
+					padding: 16px 120px 0px 0px !important;
+				}
+
+				.item_2{
+					padding: 14px 0px !important;
+				}
+
+		.img_recurso{
+			height: 274px;
+			border-radius: 18px;
+			overflow: hidden;
+		}
+
+		div>.imagen{
+			width: 100%;
+			height: 100%;
+		}
+
+				#tweet_contenido{
+					position: relative;
+					float: left;
+					width: calc(100% - 63px);
+					height: 100%;
+				}
+					#tweet_contenido>div>.username{
+						font-weight: 700;
+						font-size: 15px;
+					}
+	
+					#tweet_contenido>div>.arroba{
+						font-weight: 400;
+						font-size: 15px;
+						color: #6F767D;
+					}
+
+					#tweet_contenido>div>.icono{
+						height: 16px;
+						margin-left: 58.7%;
+					}
+
+					#tweet_contenido>div>.cambio{
+						height: 16px;
+						margin-left: 48.5%;
+					}
+
+					#tweet_contenido>div>.text{
+						font-weight: 400;
+						font-size: 15px;
+					}
+
+					#tweet_contenido>div>p>.hashtag_text{
+						color: #1A91DA;
+					}
+
+					.div{
+						margin-bottom: 7px;
+					}
+		
+#pagina_Hashtag{
+	width: 34.5%;
+}
+
+	#barra_busqueda{
+		background: #EBEEF0;
+		width: 75%;
+		height: 20px;
+		margin: 4px 0px 15px 25px;
+		padding: 15px;
+		border-radius: 30px;
+		cursor: pointer;
+	}
+		#pagina_Hashtag>#barra_busqueda>img{
+			position: relative;
+			float: left;
+			height: 100%;
+			margin-right: 20px;
+		}
+
+		#pagina_Hashtag>#barra_busqueda>input{
+			position: relative;
+			float: left;
+			font-weight: 400;
+			font-size: 15px;
+			width: calc(100% - 50px);
+			border: 0px;
+			background: #EBEEF0;
+			color: #0f1419;
+		}
+
+	#seccion_hashtag{
+		margin: 4px 0px 15px 26px;
+		width: 80.5%;
+		border-radius: 16px;
+		overflow: hidden;
+		cursor: pointer;
+	}
+
+		#titulo_seccion_3{
+			background-color: #F7F9FA;
+			font-weight: 800;
+			font-size: 19px;
+			padding: 5px 10px;
+			border-bottom: 1.6px solid #EBEEF0;
+		}
+			#seccion_hashtag>div>img{
+				height: 18px;
+				position: relative;
+				float: right;
+				padding-top: 5px;
+			}
+
+		.hashtag{
+			background: #F7F9FA;
+			position: relative;
+			float: left;
+			width: calc(100% - 20px);
+			padding: 10px 15px;
+			border-bottom: 1.6px solid #EBEEF0;
+		}
+			.letras_en_girs{
+				font-weight: 400;
+				font-size: 14px;
+				width: 100%;
+				color: #5b7083;
+			}
+
+			.letras_en_negro{
+				font-weight: 700;
+				font-size: 15px;
+				width: 100%;
+			}
+
+			.link{
+				background-color: #F7F9FA;
+				width: calc(100% - 15px);
+				height: 95px;
+				border: 1.8px solid #EBEEF0;
+				border-radius: 18px;
+				overflow: hidden;
+				margin: 4px 0px;
+			}
+				.text_link{
+					position: relative;
+					float: left;
+					width: 70%;
+					padding: 10px 5px 10px 10px; 
+				}
+					.text_link>label{
+						font-size: 16px !important;
+					}
+
+				.img_link{
+					position: relative;
+					float: left;
+					width: calc(30% - 15px);
+					height: 100%;
+				}
+					.img_link>img{
+						width: 100%;
+						height: auto;
+					}
+						@supports(object-fit: cover){
+    						.img_link>img{
+      							height: 100%;
+      							object-fit: cover;
+      							object-position: center center;
+    						}
+    					}
+    			.label{
+    				font-size: 16px !important;
+    			}
+
+    		#show_more_button{
+    			background: #F7F9FA;
+    			position: relative;
+    			float: left;
+    			width: calc(100% - 24px) !important;
+    			padding: 10px 12px;
+    		}

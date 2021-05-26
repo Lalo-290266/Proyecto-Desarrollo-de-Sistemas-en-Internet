@@ -1,0 +1,308 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    user-select: none;
+    font-family: sans-serif;
+}
+
+:root{
+    /* COLORES */
+    --verde: #2ED573;
+    --azul: #3742FA;
+    --rojo: #FF4757;
+    --blanco: #F1F2F6;
+    --negro: #2F3542;
+
+    /* TAMAÑO LETRAS */
+    --titulo: 30px;
+    --subtitulo: 20px;
+    --parrafo: 15px;
+}
+
+header{
+    background: var(--azul);
+    width: 100%;
+    height: 50px;
+    position: relative;
+    float: left;
+    padding-top: 20px;
+}
+    h6{
+        font-size: var(--subtitulo);
+        position: relative;
+        float: left;
+        color: var(--blanco);
+        margin-left: 30px;
+    }
+    ul{
+        position: relative;
+        float: right;
+        list-style: none;
+        margin-right: 30px;
+    }
+        li{
+            position: relative;
+            float: left;
+            color: var(--blanco);
+            margin-left: 25px;
+            font-size: var(--subtitulo);
+            font-weight: 200;
+        }
+        a{
+            text-decoration: none;
+            color: var(--blanco);
+        }
+        a:hover{
+            transition: 0.5s;
+            cursor: pointer;
+            color: var(--rojo);
+        }
+        .actual{
+            color: var(--verde);
+            font-weight: 500;
+        }
+    .menu{
+        position: relative;
+        float: right;
+        font-size: var(--subtitulo);
+        color: var(--blanco);
+        font-weight: 200;
+        margin-right: 30px;
+        line-height: 30px !important;
+        display: none !important; 
+    }
+    .menu-lado{
+        position: fixed;
+        right: -200px;
+        top: 70px;
+        background: var(--azul);
+        height: 100%;
+        width: 200px;
+        z-index: 1;
+        transition: 1s all;
+    }
+
+        .mostrar{
+            right: 0px;
+        }
+
+    .menu-lado>div{
+        position: relative;
+        float: left;
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        line-height: 40px;
+        transition: 1s all;
+    }
+h1{
+   font-size: var(--titulo); 
+   color: var(--rojo);
+   text-align: center;
+   margin-top: 30px;
+   position: relative;
+   float: left;
+   width: 100%;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.ficha{
+    position: relative;
+    float: left;
+    width: 200px;
+    height: 250px;
+    background: var(--blanco);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+    transition: 0.2s all;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+.ficha:hover{
+    cursor: pointer;
+    border: 5px solid var(--verde);
+}
+    .imgficha{
+        width: 100%;
+        height: 120px;
+        position: relative;
+        float: left;
+    }
+        .imgficha>img{
+            width: 100%;
+            height: 100%;
+        }
+             @supports(object-fit: cover){
+                            .imgficha>img{
+                                height: 100%;
+                                object-fit: cover;
+                                object-position: center center;
+                            }
+            }
+
+
+    .info{
+        padding: 15px;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+    }
+    h3{
+        font-size: var(--subtitulo);
+        color: var(--rojo);
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: var(--parrafo);
+        color: var(--negro);
+    }
+    p>i{
+        color: var(--rojo);
+        margin-right: 10px;
+    }
+
+/**Conciertos*/
+.contprincipal{
+    position: relative;
+    float: left;
+    width: 60%;
+    height: 40px;
+    margin-left: 20%;
+    margin-top: 30px;
+    background: rgba(127, 140, 141,0.2);
+}
+
+.margen{
+    margin-bottom: 90px;
+}
+
+.flecha{
+    position: relative;
+    float: right;
+}
+
+.ciudad{
+    width: calc(100% - 40px);
+    height: calc(100% - 20px);
+    padding: 10px 20px;
+}
+
+    .ciudad>h3{
+        width: calc(100% - 14px);
+        color: var(--verde);
+        margin-bottom: 0px !important;
+        position: relative;
+        float: left;
+    }
+        .ciudad>i{
+            transition: 1s all;
+        }
+
+
+    .ciudades{
+        position: relative;
+        float: left;
+        width: calc(100% - 20px);
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: rgba(127, 140, 141,0.1);
+        transition: 2s all;
+    }
+        .ciudades>p{
+            margin-bottom: 3px;
+        }
+
+        .ocultar{
+            top: -400px;
+            display: none;
+        }
+
+/*Bandas*/
+.bandas{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 45%;
+    margin-left: 27.5%;
+    padding-top: 25px;
+}
+    .imgbanda{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, #3742FA, #2ED573);
+        margin-right: 15px;
+        margin-bottom: 25px;
+        cursor: pointer;
+    }
+        .imgbanda>img{
+            width: 122px;
+            height: 122px;
+            border-radius: 50%;
+        }
+             @supports(object-fit: cover){
+                            .imgbanda>img{
+                                object-fit: cover;
+                                object-position: center center;
+                            }
+            }
+
+/*========ESCRITORIO========*/
+@media only screen and (min-width: 960px){
+    .ficha{width: 180px;}
+}
+
+@media only screen and (min-width: 1060px){
+    .ficha{width: 200px;}
+    .contenedor{padding-left: 50px; padding-right: 50px;}
+    .menu-lado{right: -200px;}
+}
+
+@media only screen and (min-width: 1260px){
+    .contenedor{padding-left: 100px; padding-right: 100px;}
+    .menu-lado{right: -200px;}
+}
+
+@media only screen and (min-width: 1360px){
+    .ficha{width: 220px;}
+    .contenedor{padding-left: 150px; padding-right: 150px;}
+    .menu-lado{right: -200px;}
+}
+
+@media only screen and (min-width: 1460px){
+    .contenedor{padding-left: 180px; padding-right: 180px;}
+    .menu-lado{right: -200px;}
+}
+
+    /*========MÓVIL========*/
+    @media only screen and (max-width: 600px){
+        .ficha{width: 100%;}
+        .imgficha{overflow: hidden;}
+        .contenedor{
+            display: block;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        header>ul{
+            display: none;
+        }
+        .menu{
+            display: block !important;
+        }
+        .bandas{
+            justify-content: center;
+        }
+    }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts/Iconos.css">
+	<script src="js/calculadora.js" async="true"></script>
+</head>
+<body id="body">
+
+	<div id = "Contenedor_principal">
+
+		<div id = "Pantalla">
+
+			<div id = "Tema">
+				<div id = "Dia">
+					<span id="icono_dia" class="icon-sun off" action = "off"></span>
+				</div>
+				<div id = "Noche">
+					<span id="icono_noche" class="icon-moon on" action = "on"></span>
+				</div>
+			</div>
+
+			<div id = "Operacion"></div>
+			<div id = "Resultado"></div>
+		</div>
+
+		<div id = "Botones">
+			<div class="botones sin_margen" id="borrar">C</div>
+			<div class="botones"></div>
+			<div class="botones"></div>
+			<div class="botones oprecaion" id="div">/</div>
+			
+			<div class="botones sin_margen" onclick="agregar('7')">7</div>
+			<div class="botones" onclick="agregar('8')">8</div>
+			<div class="botones" onclick="agregar('9')">9</div>
+			<div class="botones oprecaion" id="mul">x</div>
+
+			<div class="botones sin_margen" onclick="agregar('4')">4</div>
+			<div class="botones" onclick="agregar('5')">5</div>
+			<div class="botones" onclick="agregar('6')">6</div>
+			<div class="botones oprecaion" id="menos">-</div>
+
+			<div class="botones sin_margen" onclick="agregar('1')">1</div>
+			<div class="botones" onclick="agregar('2')">2</div>
+			<div class="botones" onclick="agregar('3')">3</div>
+			<div class="botones oprecaion" id="mas">+</div>
+
+			<div class="botones sin_margen" onclick="agregar('0')">0</div>
+			<div class="botones"></div>
+			<div class="botones" id="punto">.</div>
+			<div class="botones igual" onclick="igual()">=</div>
+		</div>
+	</div>
+
+</body>
+</html>
